@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(../assets/Inter/Inter-VariableFont_slntwght.ttf);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.outer-box {
+    box-sizing: border-box;
+    background: #eff6ff;
+    border: 1px dashed #2563eb;
+    border-radius: 12px;
+    height: 350px;
+    position: relative;
+    width: 350px;
+}
+
+.inner-box {
+    border: 25px solid #dbeafe;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    height: 260px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 260px;
+}
+
+.inner-box::after {
+    content: "";
+    left: 213px;
+    position: absolute;
+    top: 225px;
+    border: 12px solid #dae9fd;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(137deg);
+}
+
+.dark-inner-box {
+    border: 25px solid #bfdbfe;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 50%;
+    height: 260px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 260px;
+}
+
+.dark-inner-box::before {
+    content: "";
+    left: 24px;
+    position: absolute;
+    top: 225px;
+    border: 12px solid #bfdbfe;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(42deg);
+}
+
+.dark-inner-box::after {
+    content: "";
+    left: 21px;
+    position: absolute;
+    top: 13px;
+    border: 12px solid #bfdbfe;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(313deg);
+}
+
+.dotted-circle {
+    border: 1px dashed #2563eb;
+    border-bottom: 1px solid transparent;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    left: 46px;
+    position: absolute;
+    top: 45px;
+    z-index: 3;
+}
+
+.text-container {
+    color: #1d4ed8;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    height: 40px;
+    left: 70px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    top: 270px;
+    width: 200px;
+}
+
+.outer-box__text {
+    color: #3b82f6;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.start {
+    left: 109px;
+    position: absolute;
+    top: 218px;
+}
+
+.end {
+    left: 210px;
+    position: absolute;
+    top: 218px;
+}
+
+.needle__container {
+    height: 100%;
+    position: relative;
+    transform: rotate(55deg);
+    width: 100%;
+}
+
+.section__circle-dot-centre {
+    height: 6px;background: #93c5fd;
+    border: 1px dashed #2563eb;
+    border-radius: 39px;
+    left: 165px;
+    position: absolute;
+    top: 170px;
+    width: 6px;
+    z-index: 9;
+}
+
+.outer-dot-centre{
+    border: 1px dashed #1d4ed8;
+    border-radius: 50%;
+    height: 28px;
+    background-color: #DBEAFE;
+    width: 28px;
+    position: absolute;
+    left: 158px;
+    top: 158px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.needle__left {
+    border-bottom-right-radius: 100%;
+    border-top: 1px dashed #1d4ed8;
+    height: 12px;
+    left: 75px;
+    top: 178px;
+    transform: rotate(4deg);
+    position: absolute;background-color: rgb(239, 246, 255);
+    width: 95px;
+    z-index: 2;
+}
+
+.needle__right {
+    border-bottom: 1px dashed #1d4ed8;
+    height: 10px;
+    left: 75px;
+    position: absolute;
+    top: 160px;
+    transform: rotate(-5deg);
+    width: 95px;
+    z-index: 2;
+}
+
+.needle__arc {
+    border: 1px dashed #1d4ed8;
+    border-radius: 50%;
+    border-left: 1.5px solid transparent;
+    border-bottom: 1.5px solid transparent;
+    height: 12px;
+    left: 165px;
+    position: absolute;
+    top: 166px;
+    transform: rotate(50deg);
+    width: 12px;
+    z-index: 3;
+}
+
+.needle__div--bg {
+    background-color: rgb(191, 219, 254);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: absolute;
+    height: 13px;
+    left: 78px;
+    top: 170px;
+    transform: rotate(-3deg);
+    width: 101px;
+    z-index: 1;
+}
